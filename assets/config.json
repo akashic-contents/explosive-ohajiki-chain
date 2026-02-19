@@ -1,0 +1,880 @@
+{
+    "general": {
+        "defaultDifficulty": "normal",
+        "strikeTimeLimitInMilliSec": 8000,
+        "explosionDelayInMilliSec": 1500,
+        "initialNumStrikesRemaining": 8,
+        "playerOhajikiId": "おはじき",
+        "blastDamage": 4,
+        "maxKokoPerSec": 10
+    },
+
+    "matching": {
+        "receptionTimeInSec": 10,
+        "howToPlayText": [
+            [
+                "このゲームは「ストーン」と呼ばれる石を",
+                "投げて、ぶつけて、破壊するゲームです",
+                "みんなで協力してノルマクリアを目指しましょう"
+            ],
+            [
+                "順番が来たら画面をタッチしてストーンを投げよう",
+                "ストーン同士をぶつけて数字を減らすと爆発します"
+            ],
+            [
+                "一度にたくさん連鎖するとボーナスとして",
+                "灰色のストーンがもらえます",
+                "ノルマには関係ありませんが連鎖の種に使えます"
+            ],
+            [
+                "他の人の番のときに画面をタッチすると",
+                "狙ってほしい場所をリクエストできます"
+            ]
+        ]
+    },
+
+    "physics": {
+        "iteration": 10,
+        "restTolerance": 5
+    },
+
+    "worlds": {
+        "easy": [
+            [
+                {
+                    "norma": 4,
+                    "numAwardOhajikis": 0,
+                    "deployedOhajikis": [{
+                        "ohajikiId": "おはじき","num": 3
+                    }],
+                    "deployedOhajikiTotalLife": 6
+                },
+                {
+                    "norma": 5,
+                    "numAwardOhajikis": 3,
+                    "deployedOhajikis": [{
+                        "ohajikiId": "おはじき","num": 2
+                    },{
+                        "ohajikiId": "おはじき（固定）","num": 1
+                    }],
+                    "deployedOhajikiTotalLife": 12
+                },
+                {
+                    "norma": 6,
+                    "numAwardOhajikis": 3,
+                    "deployedOhajikis": [{
+                        "ohajikiId": "おはじき","num": 1
+                    },{
+                        "ohajikiId": "おはじき（固定）","num": 2
+                    }],
+                    "deployedOhajikiTotalLife": 24
+                },
+                {
+                    "norma": 14,
+                    "numAwardOhajikis": 3,
+                    "deployedOhajikis": [{
+                        "ohajikiId": "おはじき","num": 5
+                    },{
+                        "ohajikiId": "おはじき（固定）","num": 2
+                    },{
+                        "ohajikiId": "おはじき（大）","num": 1
+                    }],
+                    "deployedOhajikiTotalLife": 56
+                }
+            ],
+            [
+                {
+                    "norma": 4,
+                    "numAwardOhajikis": 3,
+                    "deployedOhajikis": [{
+                        "ohajikiId": "おはじき","num": 3
+                    },{
+                        "ohajikiId": "おはじき（固定）","num": 0
+                    }],
+                    "deployedOhajikiTotalLife": 15
+                },
+                {
+                    "norma": 5,
+                    "numAwardOhajikis": 3,
+                    "deployedOhajikis": [{
+                        "ohajikiId": "おはじき","num": 2
+                    },{
+                        "ohajikiId": "おはじき（固定）","num": 1
+                    }],
+                    "deployedOhajikiTotalLife": 21
+                },
+                {
+                    "norma": 6,
+                    "numAwardOhajikis": 3,
+                    "deployedOhajikis": [{
+                        "ohajikiId": "おはじき","num": 1
+                    },{
+                        "ohajikiId": "おはじき（固定）","num": 2
+                    }],
+                    "deployedOhajikiTotalLife": 33
+                },
+                {
+                    "norma": 14,
+                    "numAwardOhajikis": 3,
+                    "deployedOhajikis": [{
+                        "ohajikiId": "おはじき","num": 5
+                    },{
+                        "ohajikiId": "おはじき（固定）","num": 2
+                    },{
+                        "ohajikiId": "おはじき（大）","num": 1
+                    }],
+                    "deployedOhajikiTotalLife": 80
+                }
+            ],
+            [
+                {
+                    "norma": 4,
+                    "numAwardOhajikis": 3,
+                    "deployedOhajikis": [{
+                        "ohajikiId": "おはじき","num": 3
+                    },{
+                        "ohajikiId": "おはじき（固定）","num": 0
+                    }],
+                    "deployedOhajikiTotalLife": 24
+                },
+                {
+                    "norma": 5,
+                    "numAwardOhajikis": 3,
+                    "deployedOhajikis": [{
+                        "ohajikiId": "おはじき","num": 2
+                    },{
+                        "ohajikiId": "おはじき（固定）","num": 1
+                    }],
+                    "deployedOhajikiTotalLife": 30
+                },
+                {
+                    "norma": 6,
+                    "numAwardOhajikis": 3,
+                    "deployedOhajikis": [{
+                        "ohajikiId": "おはじき","num": 1
+                    },{
+                        "ohajikiId": "おはじき（固定）","num": 2
+                    }],
+                    "deployedOhajikiTotalLife": 42
+                },
+                {
+                    "norma": 14,
+                    "numAwardOhajikis": 3,
+                    "deployedOhajikis": [{
+                        "ohajikiId": "おはじき","num": 6
+                    },{
+                        "ohajikiId": "おはじき（固定）","num": 2
+                    },{
+                        "ohajikiId": "おはじき（大）","num": 1
+                    }],
+                    "deployedOhajikiTotalLife": 117
+                }
+            ]
+        ],
+        "normal_shortver": [
+            [
+                {
+                    "norma": 2,
+                    "numAwardOhajikis": 8,
+                    "deployedOhajikis": [{
+                        "ohajikiId": "おはじき","num": 3
+                    }],
+                    "deployedOhajikiTotalLife": 6
+                }
+            ]
+        ],
+        "normal": [
+            [
+                {
+                    "norma": 4,
+                    "numAwardOhajikis": 0,
+                    "deployedOhajikis": [{
+                        "ohajikiId": "おはじき","num": 3
+                    }],
+                    "deployedOhajikiTotalLife": 15
+                },
+                {
+                    "norma": 5,
+                    "numAwardOhajikis": 3,
+                    "deployedOhajikis": [{
+                        "ohajikiId": "おはじき","num": 2
+                    },{
+                        "ohajikiId": "おはじき（固定）","num": 1
+                    }],
+                    "deployedOhajikiTotalLife": 21
+                },
+                {
+                    "norma": 6,
+                    "numAwardOhajikis": 3,
+                    "deployedOhajikis": [{
+                        "ohajikiId": "おはじき","num": 1
+                    },{
+                        "ohajikiId": "おはじき（固定）","num": 2
+                    }],
+                    "deployedOhajikiTotalLife": 30
+                },
+                {
+                    "norma": 14,
+                    "numAwardOhajikis": 3,
+                    "deployedOhajikis": [{
+                        "ohajikiId": "おはじき","num": 5
+                    },{
+                        "ohajikiId": "おはじき（固定）","num": 2
+                    },{
+                        "ohajikiId": "おはじき（大）","num": 1
+                    }],
+                    "deployedOhajikiTotalLife": 64
+                }
+            ],
+            [
+                {
+                    "norma": 4,
+                    "numAwardOhajikis": 3,
+                    "deployedOhajikis": [{
+                        "ohajikiId": "おはじき","num": 3
+                    },{
+                        "ohajikiId": "おはじき（固定）","num": 0
+                    }],
+                    "deployedOhajikiTotalLife": 24
+                },
+                {
+                    "norma": 5,
+                    "numAwardOhajikis": 3,
+                    "deployedOhajikis": [{
+                        "ohajikiId": "おはじき","num": 2
+                    },{
+                        "ohajikiId": "おはじき（固定）","num": 1
+                    }],
+                    "deployedOhajikiTotalLife": 30
+                },
+                {
+                    "norma": 6,
+                    "numAwardOhajikis": 3,
+                    "deployedOhajikis": [{
+                        "ohajikiId": "おはじき","num": 1
+                    },{
+                        "ohajikiId": "おはじき（固定）","num": 2
+                    }],
+                    "deployedOhajikiTotalLife": 39
+                },
+                {
+                    "norma": 14,
+                    "numAwardOhajikis": 3,
+                    "deployedOhajikis": [{
+                        "ohajikiId": "おはじき","num": 5
+                    },{
+                        "ohajikiId": "おはじき（固定）","num": 2
+                    },{
+                        "ohajikiId": "おはじき（大）","num": 1
+                    }],
+                    "deployedOhajikiTotalLife": 88
+                }
+            ],
+            [
+                {
+                    "norma": 4,
+                    "numAwardOhajikis": 3,
+                    "deployedOhajikis": [{
+                        "ohajikiId": "おはじき","num": 3
+                    },{
+                        "ohajikiId": "おはじき（固定）","num": 0
+                    }],
+                    "deployedOhajikiTotalLife": 33
+                },
+                {
+                    "norma": 5,
+                    "numAwardOhajikis": 3,
+                    "deployedOhajikis": [{
+                        "ohajikiId": "おはじき","num": 2
+                    },{
+                        "ohajikiId": "おはじき（固定）","num": 1
+                    }],
+                    "deployedOhajikiTotalLife": 39
+                },
+                {
+                    "norma": 6,
+                    "numAwardOhajikis": 3,
+                    "deployedOhajikis": [{
+                        "ohajikiId": "おはじき","num": 1
+                    },{
+                        "ohajikiId": "おはじき（固定）","num": 2
+                    }],
+                    "deployedOhajikiTotalLife": 48
+                },
+                {
+                    "norma": 14,
+                    "numAwardOhajikis": 3,
+                    "deployedOhajikis": [{
+                        "ohajikiId": "おはじき","num": 6
+                    },{
+                        "ohajikiId": "おはじき（固定）","num": 2
+                    },{
+                        "ohajikiId": "おはじき（大）","num": 1
+                    }],
+                    "deployedOhajikiTotalLife": 126
+                }
+            ]
+        ],
+        "hard": [
+            [
+                {
+                    "norma": 4,
+                    "numAwardOhajikis": 0,
+                    "deployedOhajikis": [{
+                        "ohajikiId": "おはじき","num": 3
+                    },{
+                        "ohajikiId": "おはじき（固定）","num": 1
+                    }],
+                    "deployedOhajikiTotalLife": 48
+                },
+                {
+                    "norma": 5,
+                    "numAwardOhajikis": 3,
+                    "deployedOhajikis": [{
+                        "ohajikiId": "おはじき","num": 2
+                    },{
+                        "ohajikiId": "おはじき（固定）","num": 1
+                    }],
+                    "deployedOhajikiTotalLife": 51
+                },
+                {
+                    "norma": 6,
+                    "numAwardOhajikis": 3,
+                    "deployedOhajikis": [{
+                        "ohajikiId": "おはじき","num": 1
+                    },{
+                        "ohajikiId": "おはじき（固定）","num": 2
+                    }],
+                    "deployedOhajikiTotalLife": 60
+                },
+                {
+                    "norma": 14,
+                    "numAwardOhajikis": 3,
+                    "deployedOhajikis": [{
+                        "ohajikiId": "おはじき","num": 5
+                    },{
+                        "ohajikiId": "おはじき（固定）","num": 2
+                    },{
+                        "ohajikiId": "おはじき（大）","num": 1
+                    }],
+                    "deployedOhajikiTotalLife": 152
+                }
+            ],
+            [
+                {
+                    "norma": 4,
+                    "numAwardOhajikis": 3,
+                    "deployedOhajikis": [{
+                        "ohajikiId": "おはじき","num": 2
+                    },{
+                        "ohajikiId": "おはじき（固定）","num": 1
+                    }],
+                    "deployedOhajikiTotalLife": 42
+                },
+                {
+                    "norma": 5,
+                    "numAwardOhajikis": 3,
+                    "deployedOhajikis": [{
+                        "ohajikiId": "おはじき","num": 2
+                    },{
+                        "ohajikiId": "おはじき（固定）","num": 1
+                    }],
+                    "deployedOhajikiTotalLife": 57
+                },
+                {
+                    "norma": 6,
+                    "numAwardOhajikis": 3,
+                    "deployedOhajikis": [{
+                        "ohajikiId": "おはじき","num": 1
+                    },{
+                        "ohajikiId": "おはじき（固定）","num": 2
+                    }],
+                    "deployedOhajikiTotalLife": 66
+                },
+                {
+                    "norma": 14,
+                    "numAwardOhajikis": 3,
+                    "deployedOhajikis": [{
+                        "ohajikiId": "おはじき","num": 5
+                    },{
+                        "ohajikiId": "おはじき（固定）","num": 2
+                    },{
+                        "ohajikiId": "おはじき（大）","num": 1
+                    }],
+                    "deployedOhajikiTotalLife": 168
+                }
+            ],
+            [
+                {
+                    "norma": 4,
+                    "numAwardOhajikis": 3,
+                    "deployedOhajikis": [{
+                        "ohajikiId": "おはじき","num": 2
+                    },{
+                        "ohajikiId": "おはじき（固定）","num": 1
+                    }],
+                    "deployedOhajikiTotalLife": 48
+                },
+                {
+                    "norma": 5,
+                    "numAwardOhajikis": 3,
+                    "deployedOhajikis": [{
+                        "ohajikiId": "おはじき","num": 2
+                    },{
+                        "ohajikiId": "おはじき（固定）","num": 1
+                    }],
+                    "deployedOhajikiTotalLife": 63
+                },
+                {
+                    "norma": 6,
+                    "numAwardOhajikis": 3,
+                    "deployedOhajikis": [{
+                        "ohajikiId": "おはじき","num": 1
+                    },{
+                        "ohajikiId": "おはじき（固定）","num": 2
+                    }],
+                    "deployedOhajikiTotalLife": 72
+                },
+                {
+                    "norma": 14,
+                    "numAwardOhajikis": 3,
+                    "deployedOhajikis": [{
+                        "ohajikiId": "おはじき","num": 6
+                    },{
+                        "ohajikiId": "おはじき（固定）","num": 2
+                    },{
+                        "ohajikiId": "おはじき（大）","num": 1
+                    }],
+                    "deployedOhajikiTotalLife": 207
+                }
+            ]
+        ],
+        "crazy": [
+            [
+                {
+                    "norma": 5,
+                    "numAwardOhajikis": 0,
+                    "deployedOhajikis": [{
+                        "ohajikiId": "おはじき","num": 5
+                    },{
+                        "ohajikiId": "おはじき（固定）","num": 1
+                    }],
+                    "deployedOhajikiTotalLife": 102
+                },
+                {
+                    "norma": 6,
+                    "numAwardOhajikis": 3,
+                    "deployedOhajikis": [{
+                        "ohajikiId": "おはじき","num": 3
+                    },{
+                        "ohajikiId": "おはじき（固定）","num": 1
+                    }],
+                    "deployedOhajikiTotalLife": 88
+                },
+                {
+                    "norma": 7,
+                    "numAwardOhajikis": 3,
+                    "deployedOhajikis": [{
+                        "ohajikiId": "おはじき","num": 2
+                    },{
+                        "ohajikiId": "おはじき（固定）","num": 2
+                    }],
+                    "deployedOhajikiTotalLife": 104
+                },
+                {
+                    "norma": 11,
+                    "numAwardOhajikis": 3,
+                    "deployedOhajikis": [{
+                        "ohajikiId": "おはじき","num": 2
+                    },{
+                        "ohajikiId": "おはじき（固定）","num": 2
+                    },{
+                        "ohajikiId": "おはじき（大）","num": 1
+                    }],
+                    "deployedOhajikiTotalLife": 115
+                }
+            ],
+            [
+                {
+                    "norma": 5,
+                    "numAwardOhajikis": 3,
+                    "deployedOhajikis": [{
+                        "ohajikiId": "おはじき","num": 3
+                    },{
+                        "ohajikiId": "おはじき（固定）","num": 1
+                    }],
+                    "deployedOhajikiTotalLife": 72
+                },
+                {
+                    "norma": 6,
+                    "numAwardOhajikis": 3,
+                    "deployedOhajikis": [{
+                        "ohajikiId": "おはじき","num": 3
+                    },{
+                        "ohajikiId": "おはじき（固定）","num": 1
+                    }],
+                    "deployedOhajikiTotalLife": 92
+                },
+                {
+                    "norma": 7,
+                    "numAwardOhajikis": 3,
+                    "deployedOhajikis": [{
+                        "ohajikiId": "おはじき","num": 2
+                    },{
+                        "ohajikiId": "おはじき（固定）","num": 2
+                    }],
+                    "deployedOhajikiTotalLife": 108
+                },
+                {
+                    "norma": 11,
+                    "numAwardOhajikis": 3,
+                    "deployedOhajikis": [{
+                        "ohajikiId": "おはじき","num": 2
+                    },{
+                        "ohajikiId": "おはじき（固定）","num": 2
+                    },{
+                        "ohajikiId": "おはじき（大）","num": 1
+                    }],
+                    "deployedOhajikiTotalLife": 120
+                }
+            ],
+            [
+                {
+                    "norma": 5,
+                    "numAwardOhajikis": 3,
+                    "deployedOhajikis": [{
+                        "ohajikiId": "おはじき","num": 3
+                    },{
+                        "ohajikiId": "おはじき（固定）","num": 1
+                    }],
+                    "deployedOhajikiTotalLife": 76
+                },
+                {
+                    "norma": 6,
+                    "numAwardOhajikis": 3,
+                    "deployedOhajikis": [{
+                        "ohajikiId": "おはじき","num": 3
+                    },{
+                        "ohajikiId": "おはじき（固定）","num": 1
+                    }],
+                    "deployedOhajikiTotalLife": 96
+                },
+                {
+                    "norma": 7,
+                    "numAwardOhajikis": 3,
+                    "deployedOhajikis": [{
+                        "ohajikiId": "おはじき","num": 2
+                    },{
+                        "ohajikiId": "おはじき（固定）","num": 2
+                    }],
+                    "deployedOhajikiTotalLife": 112
+                },
+                {
+                    "norma": 11,
+                    "numAwardOhajikis": 3,
+                    "deployedOhajikis": [{
+                        "ohajikiId": "おはじき","num": 3
+                    },{
+                        "ohajikiId": "おはじき（固定）","num": 2
+                    },{
+                        "ohajikiId": "おはじき（大）","num": 1
+                    }],
+                    "deployedOhajikiTotalLife": 150
+                }
+            ]
+        ]
+    },
+
+    "fields": [
+        {
+            "id": "standard long true square",
+            "corners": [
+                10, 92,
+                10, 710,
+                999, 710,
+                999, 92,
+                10, 92
+            ],
+            "oneWayBorderCorners": [
+                801, 710,
+                801, 92
+            ],
+            "deployArea": {
+                "left": 112,
+                "top": 124,
+                "right": 574,
+                "bottom": 678
+            },
+            "tossArea": {
+                "left": 10,
+                "top": 92,
+                "right": 801,
+                "bottom": 710
+            },
+            "strikePosition": {
+                "x": 923,
+                "y": 401
+            }
+        },
+        {
+            "id": "standard long square",
+            "corners": [
+                67, 72,
+                16, 122,
+                16, 649,
+                67, 700,
+                800, 700,
+                1060, 440,
+                1060, 334,
+                800, 72,
+                67, 72
+            ],
+            "oneWayBorderCorners": [
+                850, 700,
+                850, 72
+            ],
+            "deployArea": {
+                "left": 128,
+                "top": 92,
+                "right": 520,
+                "bottom": 670
+            },
+            "tossArea": null,
+            "strikePosition": {
+                "x": 1000,
+                "y": 387
+            }
+        },
+        {
+            "id": "standard new",
+            "corners": [
+                118, 72,
+                16, 172,
+                16, 610,
+                112, 700,
+                698, 700,
+                958, 440,
+                958, 334,
+                698, 72,
+                118, 72
+            ],
+            "oneWayBorderCorners": [
+                800, 700,
+                800, 72
+            ],
+            "deployArea": {
+                "left": 128,
+                "top": 92,
+                "right": 520,
+                "bottom": 670
+            },
+            "tossArea": null,
+            "strikePosition": {
+                "x": 900,
+                "y": 387
+            }
+        },
+        {
+            "id": "standard old",
+            "corners": [
+                118, 72,
+                16, 172,
+                16, 610,
+                112, 700,
+                800, 700,
+                1060, 440,
+                1060, 334,
+                800, 72,
+                118, 72
+            ],
+            "oneWayBorderCorners": [
+                900, 700,
+                900, 72
+            ],
+            "deployArea": {
+                "left": 128,
+                "top": 92,
+                "right": 520,
+                "bottom": 670
+            },
+            "tossArea": null,
+            "strikePosition": {
+                "x": 900,
+                "y": 387
+            }
+        }
+    ],
+
+    "ohajikis": [
+        {
+            "id": "おはじき",
+
+            "type": "ohajiki",
+            "appearance": "normal",
+            "lifeRange": [1, 9],
+            "dieOnRest": false,
+            "damageSources": ["ohajiki"],
+            "receiveBlastDamage": false,
+
+            "radius": 35,
+            "mu": 2.4,
+            "mass": 10,
+            "restitution": 0.9,
+
+            "blast": {
+                "radius": 75,
+                "impulse": 11000
+            },
+
+            "normaDecrease": 1
+        },
+        {
+            "id": "おはじき透明",
+
+            "type": "ohajiki",
+            "appearance": "crystal",
+            "lifeRange": [2, 4],
+            "dieOnRest": false,
+            "damageSources": ["ohajiki"],
+            "receiveBlastDamage": false,
+
+            "radius": 35,
+            "mu": 2.4,
+            "mass": 10,
+            "restitution": 0.9,
+
+            "blast": {
+                "radius": 75,
+                "impulse": 11000
+            },
+
+            "normaDecrease": 0
+        },
+        {
+            "id": "おはじき（大）",
+
+            "type": "ohajiki",
+            "appearance": "big",
+            "lifeRange": [10, 10],
+            "dieOnRest": false,
+            "damageSources": ["ohajiki"],
+            "receiveBlastDamage": false,
+
+            "radius": 56,
+            "mu": 2.4,
+            "mass": 20,
+            "restitution": 0.9,
+            "blast": {
+                "radius": 180,
+                "impulse": 14000
+            },
+
+            "normaDecrease": 1
+        },
+        {
+            "id": "おはじき（固定）",
+
+            "type": "ohajiki",
+            "appearance": "normal",
+            "lifeRange": [4, 9],
+            "dieOnRest": false,
+            "damageSources": ["ohajiki"],
+            "receiveBlastDamage": true,
+
+            "radius": 35,
+            "mu": 2.4,
+            "mass": 0,
+            "restitution": 1.25,
+
+            "blast": {
+                "radius": 75,
+                "impulse": 11000
+            },
+
+            "normaDecrease": 1
+        }
+    ],
+
+    "strike": {
+        "impulseScale": 35,
+        "impulseMax": 6800
+    },
+
+    "swingArrow": {
+        "angularVelocity": 110,
+        "maxAngle": 70
+    },
+
+    "specialBlast": {
+        "radius": 180,
+        "impulse": 14000
+    },
+
+    "crystalOhajiki": {
+        "ohajikiId": "おはじき透明",
+        "comboBonuses": [
+            { "combo": 5 },
+            { "combo": 7 },
+            { "combo": 9 },
+            { "combo": 11 },
+            { "combo": 13 },
+            { "combo": 15 },
+            { "combo": 17 },
+            { "combo": 19 },
+            { "combo": 21 },
+            { "combo": 23 }
+        ],
+        "countExplosion": true
+    },
+
+    "hitstop": {
+        "durationInFrame": 12,
+        "timeScale": 0.03
+    },
+
+    "trail": {
+        "nodeLifeSpanInFrame": 15,
+        "occurrenceSpeed": 6,
+        "maxLength": null,
+        "lengthScale": 0.5
+    },
+
+    "audio": {
+        "volumes": {
+            "/assets/gameplay/se/cheers": 0.7,
+            "/assets/common/se/jingle/game_start": 0.3,
+            "/assets/common/se/jingle/stage_end": 0.3,
+            "/assets/common/se/jingle/stage_start": 0.3,
+            "/assets/common/se/jingle/game_end": 0.3,
+            "/assets/common/se/notify_winning": 0.4,
+            "/assets/gameplay/se/strike_stone": 0.15,
+            "/assets/gameplay/se/stone_vs_fixed_1": 0.35,
+            "/assets/gameplay/se/stone_vs_fixed_2": 0.35,
+            "/assets/gameplay/se/stone_vs_fixed_3": 0.35,
+            "/assets/common/se/spawn": 0.2,
+            "/assets/gameplay/se/explosion_1": 0.35,
+            "/assets/gameplay/se/explosion_2": 0.36,
+            "/assets/gameplay/se/explosion_3": 0.37,
+            "/assets/gameplay/se/explosion_4": 0.38,
+            "/assets/gameplay/se/explosion_5": 0.39,
+            "/assets/gameplay/se/explosion_6": 0.41,
+            "/assets/gameplay/se/explosion_7": 0.40,
+            "/assets/gameplay/se/stone_vs_stone_1": 0.35,
+            "/assets/gameplay/se/stone_vs_stone_2": 0.35,
+            "/assets/gameplay/se/stone_vs_stone_3": 0.35,
+            "/assets/ui/se/arrival": 0.35,
+            "/assets/gameplay/se/stone_vs_wall": 0.3,
+            "/assets/ui/se/MVP": 0.2,
+            "/assets/gameplay/se/koko": 0.2,
+            "/assets/common/bgm/result": 0.13,
+            "/assets/common/bgm/playing": 0.1,
+            "/assets/common/bgm/result_mono": 0.13,
+            "/assets/common/bgm/playing_mono": 0.1,
+            "/assets/gameplay/se/se_nice": 0.35
+        }
+    },
+
+    "debug": {
+        "enableLog": false
+    }
+}

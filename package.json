@@ -1,0 +1,39 @@
+{
+  "name": "@akashic-contents/explosive-ohajiki-chain",
+  "private": true,
+  "version": "1.0.0",
+  "description": "ぶっこわしカーリング",
+  "author": "DWANGO Co., Ltd.",
+  "license": "MIT",
+  "scripts": {
+    "build": "rimraf ./script && tsc && akashic scan asset script",
+    "update": "akashic scan asset && akashic scan globalScripts",
+    "lint": "eslint ./src",
+    "lint:fix": "eslint ./src --fix",
+    "start": "akashic sandbox .",
+    "serve": "akashic serve -s nicolive:multi .",
+    "export-zip": "mkdirp dist/zip && akashic export zip -o dist/zip/game.zip --target-service nicolive --minify --hash-filename --force",
+    "export-html": "rimraf dist/html && akashic export html -o dist/html",
+    "stat": "akashic stat size",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/akashic-contents/explosive-ohajiki-chain.git"
+  },
+  "devDependencies": {
+    "@akashic/akashic-cli": "^3.0.21",
+    "@akashic/akashic-engine": "^3.21.1",
+    "@eslint/js": "^9.17.0",
+    "eslint": "^9.17.0",
+    "jest": "^30.2.0",
+    "mkdirp": "^3.0.1",
+    "rimraf": "^6.0.1",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.18.2"
+  },
+  "dependencies": {
+    "@akashic-extension/akashic-timeline": "^3.2.2",
+    "@akashic-extension/coe": "^2.3.0"
+  }
+}
